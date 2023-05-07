@@ -20,7 +20,6 @@ class WorkerFactory extends Factory
             'firstName' => fake()->firstName(),
             'lastName' => fake()->lastName(),
             'email' => fake()->email(),
-            'phone' => fake()->phoneNumber()
         ];
     }
 }

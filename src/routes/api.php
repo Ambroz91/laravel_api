@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\V1\FirmController;
+use App\Http\Controllers\Api\V1\WorkerController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::prefix('v1')->group(function (){
     Route::apiResource('/firms', FirmController::class);
+    Route::apiResource('/workers', WorkerController::class);
 
 });
 

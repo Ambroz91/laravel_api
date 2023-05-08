@@ -25,6 +25,9 @@ cd src
 docker compose build
 ```
 ```bash
+composer install
+```
+```bash
 docker compose up -d
 ```
 ```bash
@@ -34,6 +37,31 @@ docker compose exec app php artisan migrate
 docker compose exec app php artisan db:seed
 ```
 
+## POSTMAN
+For the POST method there mus be a specific header set.
+```
+KEY = Accept
+VALUE = application/json
+```
+
+### Enpoints in POSTMAN
+
+![img.png](img.png)
+
+### Response for the Get Firms Api
+![img_1.png](img_1.png)
+
+### Get a single firm via ID
+![img_2.png](img_2.png)
+
+### Post a firm
+![img_3.png](img_3.png)
+
+### Update a Firm
+![img_4.png](img_4.png)
+
+### Deleta a Firm
+![img_5.png](img_5.png)
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
